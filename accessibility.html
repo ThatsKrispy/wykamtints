@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Accessibility — Wykam Tints</title>
+<meta name="description" content="Wykam Tints' commitment to an accessible website for all visitors." />
+<meta name="theme-color" content="#0A0A0B" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;500;600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--obsidian:#0A0A0B;--carbon:#15161A;--line:#2A2C33;--gold:#E8B449;--chrome:#C7CBD1;--ink:#F5F4F2;--mute:#9A9DA6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--obsidian);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--gold);color:#000}
+  a{color:var(--gold);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:820px;margin:0 auto;padding:0 28px}
+  header{border-bottom:1px solid var(--line);background:rgba(10,10,11,.85);position:sticky;top:0;backdrop-filter:blur(14px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;max-width:1240px;margin:0 auto;padding:0 28px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Saira';font-weight:800;font-size:1.32rem;text-transform:uppercase}
+  .brand .mark{width:34px;height:34px}
+  .brand .tints{font-size:.62rem;letter-spacing:.42em;color:var(--chrome);align-self:flex-end;margin-bottom:5px;margin-left:-6px;font-weight:600}
+  .back{font-family:'Saira';font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.84rem;color:var(--mute)}
+  .back:hover{color:var(--gold);text-decoration:none}
+  main{padding:72px 0 96px}
+  .eyebrow{font-family:'Saira';text-transform:uppercase;letter-spacing:.32em;font-size:.72rem;font-weight:600;color:var(--gold)}
+  h1{font-family:'Saira';font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.04;margin:14px 0 8px}
+  .updated{color:var(--mute);font-size:.86rem;margin-bottom:46px}
+  h2{font-family:'Saira';font-weight:600;text-transform:uppercase;letter-spacing:.02em;font-size:1.35rem;margin:42px 0 14px}
+  p{color:var(--chrome);margin-bottom:16px}
+  ul{color:var(--chrome);margin:0 0 16px 22px}
+  li{margin-bottom:8px}
+  footer{border-top:1px solid var(--line);background:var(--carbon);padding:28px 0;text-align:center;color:var(--mute);font-size:.82rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" fill="#15161A" stroke="#2A2C33"/><path d="M9 13 L15 27 L20 17 L25 27 L31 13" stroke="#C7CBD1" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M16.5 11 L22.5 23" stroke="#E8B449" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span><b>Wykam</b></span><span class="tints">Tints</span>
+    </a>
+    <a href="index.html" class="back">← Back to site</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Commitment</span>
+    <h1>Accessibility</h1>
+    <p class="updated">Last updated: January 2026</p>
+
+    <p>Wykam Tints wants every visitor to be able to use our website, regardless of ability or the technology they rely on. We design and maintain this site with accessibility in mind.</p>
+
+    <h2>What we do</h2>
+    <ul>
+      <li>Aim to meet the WCAG 2.1 AA guidelines as a practical standard</li>
+      <li>Use semantic HTML so screen readers can navigate the page in a logical order</li>
+      <li>Maintain strong color contrast between text and backgrounds</li>
+      <li>Provide visible keyboard focus and full keyboard operation, including the tint comparison slider</li>
+      <li>Respect the "reduced motion" setting in your operating system or browser</li>
+      <li>Label form fields and interactive controls for assistive technology</li>
+    </ul>
+
+    <h2>Ongoing work</h2>
+    <p>Accessibility is never finished. We review the site as we update it and fix issues as we find them. If something doesn't work the way it should for you, we want to know.</p>
+
+    <h2>Tell us</h2>
+    <p>If you run into a barrier on this site, or need information in another format, please contact us and we'll help directly. Email <a href="mailto:hello@wykamtints.com">hello@wykamtints.com</a> or call <a href="tel:+13050000000">(305) 000-0000</a>. We'll do our best to respond within two business days.</p>
+  </div>
+</main>
+<footer>© <span id="yr"></span> Wykam Tints · Miami, FL</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
