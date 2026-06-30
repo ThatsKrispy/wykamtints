@@ -179,8 +179,23 @@
   .navtoggle span{width:24px;height:2px;background:var(--ink);transition:.3s}
 
   /* ---------- HERO ---------- */
-  .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:74px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;width:100%}
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:74px;overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60% 50% at 12% 28%,rgba(232,180,73,.16) 0%,rgba(232,180,73,0) 70%),
+      radial-gradient(40% 35% at 38% 78%,rgba(199,203,209,.05) 0%,rgba(199,203,209,0) 70%);
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size:42px 42px;
+    -webkit-mask:linear-gradient(115deg,#000 0%,#000 45%,transparent 72%);
+    mask:linear-gradient(115deg,#000 0%,#000 45%,transparent 72%);
+  }
+  .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;width:100%}
   .hero h1{font-size:clamp(2.9rem,6.6vw,5.6rem);margin:22px 0 0}
   .hero h1 .glow{color:var(--gold);position:relative}
   .hero-sub{font-size:1.12rem;color:var(--mute);max-width:42ch;margin:22px 0 32px}
@@ -354,6 +369,7 @@
     .navtoggle{display:flex}
     .nav .btn-gold{display:none}
     .hero-grid{grid-template-columns:1fr;gap:40px}
+    .hero::after{-webkit-mask:linear-gradient(180deg,#000 0%,#000 55%,transparent 85%);mask:linear-gradient(180deg,#000 0%,#000 55%,transparent 85%)}
     .demo{max-width:440px;margin:0 auto}
     .why-grid,.price-grid,.quotes{grid-template-columns:1fr}
     .book-grid{grid-template-columns:1fr;gap:34px}
