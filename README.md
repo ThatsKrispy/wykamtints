@@ -68,9 +68,28 @@ against ADA claims.
    Apple Maps, Facebook. Inconsistency hurts.
 4. **Citations** — get listed in Yelp, Bing Places, Apple Business Connect.
 
-## Generating real images with AI (to replace placeholders)
-Use these prompts in Midjourney / DALL·E / Firefly / Flux. Export at the
-listed size, save over the matching file in `img/`. Keep filenames identical.
+## Image status (updated)
+All 12 image slots now use **real, licensed stock photography** (Pexels License —
+free for commercial use, no attribution required), swapped in to replace the
+earlier placeholder renders. These are a legitimate, licensed temporary
+solution — not the client's own work. **Before launch, replace with real
+Wykam Tints job photos** for authenticity, trust, and original-image SEO value
+(geotagged photos of the client's actual installs outrank generic stock).
+
+Current sources (all Pexels, free commercial license):
+- `service-auto.webp` — installer applying ceramic film to a vehicle roofline
+- `service-commercial.webp` — glass office facade detail
+- `service-residential.webp` — sunlit living room with floor-to-ceiling windows
+- `service-marine.webp` — yacht cockpit with marina-view windows
+- `gallery-1.webp` through `gallery-6.webp` — tint/glass detail shots, sedan
+  and yacht exteriors, commercial facade texture
+- `og-share.webp` / `og-share.png` — moody black sedan with ceramic tint, used
+  for social link previews
+
+## Generating real images with AI (alternative to stock, still pending)
+Use these prompts in Midjourney / DALL·E / Firefly / Flux if AI-generated
+imagery is preferred over stock. Export at the listed size, save over the
+matching file in `img/`. Keep filenames identical.
 
 - `img/og-share.png` (1200×630) — "Cinematic wide shot of a glossy black luxury
   sedan with freshly tinted windows in a dark detailing studio, dramatic gold
